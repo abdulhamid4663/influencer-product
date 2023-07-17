@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- LOCAL STYLES -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,16 +20,102 @@
     <!-- HEADER SECTION STARTS -->
     <header class="header">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between align-items-center">
+                <a href="#" class="header__hamburger hide-for-desktop" id="btnHamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
                 <div class="header__logo">
                     <a href="#">Influencer products</a>
                 </div>
-                <nav class="">
-                    <ul class=""></ul>
+                <nav>
+                    <ul class="header__nav row">
+                        <li class="nav-item hide-for-mobile">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-item hide-for-mobile">
+                            <a href="#">Products</a>
+                        </li>
+                        <li class="nav-item hide-for-mobile">
+                            <a href="#">Sign up</a>
+                        </li>
+                        <li class="nav-item hide-for-mobile">
+                            <a href="#">Log In</a>
+                        </li>
+                        <li class="nav-item hide-for-mobile">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
     <!-- HEADER SECTION ENDS -->
+
+    <!-- BANNER SECTION STARTS -->
+    <section class="banner">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2">
+                    <div class="banner__text text-center">
+                        <h1 class="banner-title">Start your Journey as Influencer</h1>
+                        <p class="banner-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum sed scelerisque eros. Lectus faucibus.</p>
+                        <div class="banner-btn">
+                            <a href="#" class="btn">
+                                Preebook now
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="banner__image">
+                        <img src="images/main-camera.png" alt="Camera">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION ENDS -->
+
+    <!-- SPONSORS SECTION STARTS -->
+    <section class="sponsors">
+        <div class="container">
+            <div class="sponsors__card">
+                <div class="row justify-content-around aling-items-center">
+                    <div class="sponsors__item alibaba row aling-items-center">
+                        <img src="images/logos/Alibaba.svg" alt="Alibaba">
+                    </div>
+                    <div class="sponsors__item amazon row aling-items-center">
+                        <img src="images/logos/Amazon.svg" alt="Amazon">
+                    </div>
+                    <div class="sponsors__item daraz row aling-items-center">
+                        <img src="images/logos/Daraz.pk Logo.svg" alt="Daraz">
+                    </div>
+                    <div class="sponsors__item ebay row aling-items-center">
+                        <img src="images/logos/Ebay.svg" alt="Ebay">
+                    </div>
+                    <div class="sponsors__item rakuten row aling-items-center">
+                        <img src="images/logos/Rakuten.svg" alt="Rakuten">
+                    </div>
+                    <div class="sponsors__item walmart row aling-items-center">
+                        <img src="images/logos/Walmart.svg" alt="Walmart">
+                    </div>
+                    <div class="sponsors__item target row aling-items-center">
+                        <img src="images/logos/Target.svg" alt="Target">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SPONSORS SECTION ENDS -->
 </body>
 </html>

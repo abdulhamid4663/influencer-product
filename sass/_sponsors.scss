@@ -1,0 +1,49 @@
+// SPONSORS SECTION 
+
+.sponsors {
+    > .row {
+        @include breakpoint-up(large) {
+            justify-content: center;
+        }
+    }
+    &__card {
+        margin: 3.125rem 0;
+        height: 61px;
+
+        @include breakpoint-up(large) {
+            height: auto;
+        }
+
+        > .row {
+            height: 61px;
+            align-content: space-between;
+
+            @include breakpoint-up(large) {
+                height: auto;
+                align-content: flex-start;
+            }
+        }
+
+        @include breakpoint-up(large) {
+            margin: 6.25rem 0;
+            padding: 2.1875rem 0;
+        }
+    }
+
+    &__item {
+        @include breakpoint-up(large) {
+            &:not(:last-of-type) {
+                margin-right: 3.75rem;
+            }
+        }
+        img {
+            max-width: 60%;
+            @include breakpoint-up(large) {
+                max-width: 100%;
+            }
+        }
+    }
+    &__item.row {
+        justify-content: center;
+    }
+}

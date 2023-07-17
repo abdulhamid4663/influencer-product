@@ -1,0 +1,56 @@
+// HEADER SECTION 
+
+.header {
+    padding-top: 2.1875rem;
+
+    @include breakpoint-up(large) {
+        padding-top: 5.4375rem;
+    }
+
+    &__hamburger {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.375rem 0;
+        > span {
+            display: block;
+            width: 1.125rem;
+            height: 0.125rem;
+            background-color: $secondary-color;
+
+            &:not(:last-of-type) {
+                margin-bottom: 0.1875rem;
+            }
+        }
+    }
+    &__logo {
+        a {
+            font-size: $n-size;
+            color: $primary-color;
+            font-weight: $bold;
+
+            @include breakpoint-up(large) {
+                font-size: $m-size
+            }
+        }
+    }
+    &__nav {
+        .nav-item {
+
+            &:not(:last-of-type) {
+                margin-right: 2.125rem;
+            }
+            a {
+                font-size: $n-size;
+                color: $primary-color;
+                font-weight: $semiBold;
+                transition: color 200ms ease-in-out;
+
+                @include breakpoint-up(large) {
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

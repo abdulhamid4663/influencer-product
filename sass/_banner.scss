@@ -1,0 +1,86 @@
+// BANNER SECTION 
+
+.banner {
+
+    .row {
+        flex-direction: column-reverse;
+
+        @include breakpoint-up(large) {
+            flex-direction: row;
+        }
+    }
+    &__text {
+
+        @include breakpoint-up(large) {
+            text-align: start;
+        }
+        .banner-title {
+            font-size: $xm-size;
+            color: $primary-color;
+            font-weight: $bold;
+
+            @include breakpoint-up(large) {
+                font-size: $l-size;
+            }
+            @include breakpoint-up(xlarge) {
+                font-size: $xl-size;
+            }
+        }
+        .banner-description {
+            font-size: $s-size;
+            color: $primary-color;
+            font-weight: $medium;
+            margin: 0.9375rem 0 1.25rem;
+
+            @include breakpoint-up(large) {
+                margin: 0 0 1rem;
+            }
+        }
+        .banner-btn {
+            a {
+                display: inline-block;
+                font-size: $n-size;
+                color: $white;
+                font-weight: $bold;
+                background-color: $senary-color;
+                padding: 0.625rem 1.5rem;
+                border-radius: 2.5625rem;
+                border: 1px solid transparent;
+                transition: all 200ms ease-in-out;
+
+                i {
+                    margin-left: 0.5rem;
+                }
+                
+                @include breakpoint-up(large) {
+                    &:hover {
+                        background-color: transparent;
+                        color: $senary-color;
+                        border-color: $senary-color;
+                    }
+                }
+            }
+        }
+    }
+    &__image {
+        text-align: center;
+        margin-top: 1.375rem;
+
+        @include breakpoint-up(large) {
+            margin-top: 3.125rem;
+            text-align: end;
+        }
+        img {
+            background-image: url('../images/Circle design.svg');
+            background-size: calc(100% - 3.25rem);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 2.8125rem;
+
+            @include breakpoint-up(large) {
+                background-size: cover;
+                padding: 0;
+            }
+        }
+    }
+}
