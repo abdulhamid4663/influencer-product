@@ -8,14 +8,14 @@
     }
     &__card {
         margin: 3.125rem 0;
-        height: 61px;
+        height: 3.8125rem;
 
         @include breakpoint-up(large) {
             height: auto;
         }
 
         > .row {
-            height: 61px;
+            height: 3.8125rem;
             align-content: space-between;
 
             @include breakpoint-up(large) {
