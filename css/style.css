@@ -1,3 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
 
+img {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.col-2 {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .col-2 {
+      width: 50%; }
+      .col-2:not(:last-of-type) {
+        padding-right: 1rem; } }
+
+.col-3 {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .col-3 {
+      width: 33.33%; }
+      .col-3:not(:first-of-type) {
+        padding-left: 1rem; }
+      .col-3:nth-of-type(2) {
+        padding: 0; }
+      .col-3:not(:last-of-type) {
+        padding-right: 1rem; } }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.justify-content-start {
+  justify-content: flex-start; }
+.justify-content-center {
+  justify-content: center; }
+.justify-content-end {
+  justify-content: flex-end; }
+.justify-content-around {
+  justify-content: space-around; }
+.justify-content-between {
+  justify-content: space-between; }
+.justify-content-evenly {
+  justify-content: space-evenly; }
+
+.align-items-start {
+  align-items: flex-start; }
+.align-items-center {
+  align-items: center; }
+.align-items-end {
+  align-items: flex-end; }
+
+.align-content-start {
+  align-content: flex-start; }
+.align-content-center {
+  align-content: center; }
+.align-content-end {
+  align-content: flex-end; }
+.align-content-around {
+  align-content: space-around; }
+.align-content-between {
+  align-content: space-between; }
+.align-content-evenly {
+  align-content: space-evenly; }
+
+.text-start {
+  text-align: start; }
+.text-center {
+  text-align: center; }
+.text-end {
+  text-align: end; }
+.text-justify {
+  text-align: justify; }
+
+.d-none {
+  display: none; }
+.d-block {
+  display: block; }
+.d-inline {
+  display: inline; }
+.d-inline-block {
+  display: inline-block; }
+.d-flex {
+  display: flex; }
+.d-grid {
+  display: grid; }
+
+.position-relative {
+  position: relative; }
+.position-absolute {
+  position: absolute; }
+.position-fixed {
+  position: fixed; }
+.position-sticky {
+  position: sticky; }
+
+a, a:visited, a:hover {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+@media (min-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none; } }
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none; } }
+
+.no-scroll {
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

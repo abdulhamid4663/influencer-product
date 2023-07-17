@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.col-2 {
+    width: 100%;
+    @include breakpoint-up(large) {
+        width: 50%;
+        
+        &:not(:last-of-type) {
+            padding-right: 1rem;
+        }
+    }
+}
+.col-3 {
+    width: 100%;
+    @include breakpoint-up(large) {
+        width: 33.33%;
+
+        &:not(:first-of-type) {
+            padding-left: 1rem;
+        }
+        &:nth-of-type(2) {
+            padding: 0;
+        }
+        &:not(:last-of-type) {
+            padding-right: 1rem;
+        }
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content {
+    &-start {
+        justify-content: flex-start;
+    }
+    &-center {
+        justify-content: center;
+    }
+    &-end {
+        justify-content: flex-end;
+    }
+    &-around {
+        justify-content: space-around;   
+    }
+    &-between {
+        justify-content: space-between;
+    }
+    &-evenly {
+        justify-content: space-evenly;
+    }
+}
+.align-items {
+    &-start {
+        align-items: flex-start;
+    }
+    &-center {
+        align-items: center;
+    }
+    &-end {
+        align-items: flex-end;
+    }
+}
+.align-content {
+    &-start {
+        align-content: flex-start;
+    }
+    &-center {
+        align-content: center;
+    }
+    &-end {
+        align-content: flex-end;
+    }
+    &-around {
+        align-content: space-around;
+    }
+    &-between {
+        align-content: space-between;
+    }
+    &-evenly {
+        align-content: space-evenly;
+    }
+}
+.text {
+    &-start {
+        text-align: start;
+    }
+    &-center {
+        text-align: center;
+    }
+    &-end {
+        text-align: end;
+    }
+    &-justify {
+        text-align: justify;
+    }
+}
+.d {
+    &-none {
+        display: none;
+    }
+    &-block {
+        display: block;
+    }
+    &-inline {
+        display: inline;
+    }
+    &-inline-block {
+        display: inline-block;
+    }
+    &-flex {
+        display: flex;
+    }
+    &-grid {
+        display: grid;
+    }
+}
+.position {
+    &-relative {
+        position: relative;
+    }
+    &-absolute {
+        position: absolute;
+    }
+    &-fixed {
+        position: fixed;
+    }
+    &-sticky {
+        position: sticky;
+    }
+}
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+.no-scroll {
+    overflow: hidden;
+}
