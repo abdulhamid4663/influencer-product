@@ -9,13 +9,13 @@
     &__card {
         margin: 3.125rem 0;
         height: 3.8125rem;
-        border: 1px solid;
-        border-image: linear-gradient(to right, transparent,rgba(192, 204, 218, 0.6), transparent) 1;
-        border-left: 0;
-        border-right: 0;
 
         @include breakpoint-up(large) {
             height: auto;
+            border: 1px solid;
+            border-image: linear-gradient(to right, transparent,rgba(192, 204, 218, 0.6), transparent) 1;
+            border-left: 0;
+            border-right: 0;
         }
 
         > .row {

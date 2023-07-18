@@ -225,14 +225,14 @@ ul {
     justify-content: center; } }
 .sponsors__card {
   margin: 3.125rem 0;
-  height: 3.8125rem;
-  border: 1px solid;
-  border-image: linear-gradient(to right, transparent, rgba(192, 204, 218, 0.6), transparent) 1;
-  border-left: 0;
-  border-right: 0; }
+  height: 3.8125rem; }
   @media (min-width: 64em) {
     .sponsors__card {
-      height: auto; } }
+      height: auto;
+      border: 1px solid;
+      border-image: linear-gradient(to right, transparent, rgba(192, 204, 218, 0.6), transparent) 1;
+      border-left: 0;
+      border-right: 0; } }
   .sponsors__card > .row {
     height: 3.8125rem;
     align-content: space-between; }
