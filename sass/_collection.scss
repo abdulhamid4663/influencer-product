@@ -1,0 +1,144 @@
+// COLLECTION SECTION 
+
+.collection {
+    
+    .gap {
+        gap: 0.9375rem;
+
+        @include breakpoint-up(medium) {
+            gap: 2rem;
+        }
+    }
+    &__header {
+        margin-bottom: 1.25rem;
+
+        @include breakpoint-up(large) {
+            padding: 1.25rem 0;
+            margin-bottom: 1.875rem;
+        }
+        h1 {
+            font-size: $n-size;
+            color: $primary-color;
+            font-weight: $semiBold;
+
+            @include breakpoint-up(large) {
+                font-size: $xm-size;
+            }
+        }
+    }
+    &__card {
+        padding: 1rem 0.9375rem;
+        width: 100%;
+        background-color: $white;
+        border-radius: 0.3125rem;
+        box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.31);
+        -webkit-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.31);
+        -moz-box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.31);
+
+        @include breakpoint-up(medium) {
+            width: 36%;
+        }
+        @include breakpoint-up(large) {
+            width: 28%;
+        }
+        &-image {
+
+        }
+        &-text {
+            padding: 0 0 1.6875rem;
+
+            @include breakpoint-up(large) {
+                padding: 0;
+            }
+            .card-title {
+                font-size: $xm-size;
+                color: $secondary-color;
+                font-weight: $bold;
+
+                @include breakpoint-up(large) {
+                    font-weight: $medium;
+                }
+
+            }
+            .card-price {
+                font-size: $m-size;
+                color: $tertiary-color;
+                font-weight: $bold;
+                font-family: $fontInter;
+
+                @include breakpoint-up(large) {
+                    font-weight: $regular;
+                }
+            }
+            .card-rate {
+                .card-rate-info {
+                    .rate-item {
+
+                    }
+                    .star {
+                        font-size: 0.625rem;
+                        color: $star-color;
+                        
+                        i {
+                            margin-right: 0.1875rem;
+                        }
+                    }
+                    .rate-text {
+                        font-size: $s-size;
+                        color: $quaternary-color;
+                        font-weight: $medium;
+                        margin-left: 0.625rem;
+                        font-family: $fontRoboto;
+                        
+                    }
+                }
+            }
+            .card-description {
+                font-size: $s-size;
+                color: $quinary-color;
+                font-weight: $regular;
+                font-family: $fontInter;
+
+                @include breakpoint-up(large) {
+                    font-weight: $bold;
+                }
+                span {
+
+                    @include breakpoint-up(large) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &__more {
+        margin-top: 2rem;
+
+        @include breakpoint-up(large) {
+            margin-top: 3.125rem;
+        }
+        
+        a {
+            font-size: $n-size;
+            color: $senary-color;
+            font-weight: $bold;
+
+            @include breakpoint-up(large) {
+                margin-right: 3rem;
+            }
+            @include breakpoint-up(xlarge) {
+                margin-right: 3.875rem;
+            }
+            i {
+                margin-left: 0.5rem;
+            }
+        }
+        @include breakpoint-up(medium) {
+            text-align: center;
+        }
+        @include breakpoint-up(large) {
+            text-align: right;
+        }
+    }
+
+}

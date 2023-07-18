@@ -34,11 +34,11 @@ img {
     .col-3 {
       width: 33.33%; }
       .col-3:not(:first-of-type) {
-        padding-left: 1rem; }
+        padding-left: 0.9375rem; }
       .col-3:nth-of-type(2) {
-        padding: 0; }
+        padding: 0 0.9375rem; }
       .col-3:not(:last-of-type) {
-        padding-right: 1rem; } }
+        padding-right: 0.9375rem; } }
 
 .row {
   display: flex;
@@ -250,5 +250,103 @@ ul {
       max-width: 100%; } }
 .sponsors__item.row {
   justify-content: center; }
+
+.collection .gap {
+  gap: 0.9375rem; }
+  @media (min-width: 40em) {
+    .collection .gap {
+      gap: 2rem; } }
+.collection__header {
+  margin-bottom: 1.25rem; }
+  @media (min-width: 64em) {
+    .collection__header {
+      padding: 1.25rem 0;
+      margin-bottom: 1.875rem; } }
+  .collection__header h1 {
+    font-size: 1rem;
+    color: #3A3A3A;
+    font-weight: 600; }
+    @media (min-width: 64em) {
+      .collection__header h1 {
+        font-size: 1.75rem; } }
+.collection__card {
+  padding: 1rem 0.9375rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.31); }
+  @media (min-width: 40em) {
+    .collection__card {
+      width: 36%; } }
+  @media (min-width: 64em) {
+    .collection__card {
+      width: 28%; } }
+  .collection__card-text {
+    padding: 0 0 1.6875rem; }
+    @media (min-width: 64em) {
+      .collection__card-text {
+        padding: 0; } }
+    .collection__card-text .card-title {
+      font-size: 1.75rem;
+      color: #18191F;
+      font-weight: 700; }
+      @media (min-width: 64em) {
+        .collection__card-text .card-title {
+          font-weight: 500; } }
+    .collection__card-text .card-price {
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.87);
+      font-weight: 700;
+      font-family: "Inter", sans-serif; }
+      @media (min-width: 64em) {
+        .collection__card-text .card-price {
+          font-weight: 400; } }
+    .collection__card-text .card-rate .card-rate-info .star {
+      font-size: 0.625rem;
+      color: #FB8200; }
+      .collection__card-text .card-rate .card-rate-info .star i {
+        margin-right: 0.1875rem; }
+    .collection__card-text .card-rate .card-rate-info .rate-text {
+      font-size: 0.875rem;
+      color: #5E6366;
+      font-weight: 500;
+      margin-left: 0.625rem;
+      font-family: "Roboto", sans-serif; }
+    .collection__card-text .card-description {
+      font-size: 0.875rem;
+      color: #787885;
+      font-weight: 400;
+      font-family: "Inter", sans-serif; }
+      @media (min-width: 64em) {
+        .collection__card-text .card-description {
+          font-weight: 700; } }
+      @media (min-width: 64em) {
+        .collection__card-text .card-description span {
+          display: block; } }
+.collection__more {
+  margin-top: 2rem; }
+  @media (min-width: 64em) {
+    .collection__more {
+      margin-top: 3.125rem; } }
+  .collection__more a {
+    font-size: 1rem;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700; }
+    @media (min-width: 64em) {
+      .collection__more a {
+        margin-right: 3rem; } }
+    @media (min-width: 87.5em) {
+      .collection__more a {
+        margin-right: 3.875rem; } }
+    .collection__more a i {
+      margin-left: 0.5rem; }
+  @media (min-width: 40em) {
+    .collection__more {
+      text-align: center; } }
+  @media (min-width: 64em) {
+    .collection__more {
+      text-align: right; } }
 
 /*# sourceMappingURL=style.css.map */

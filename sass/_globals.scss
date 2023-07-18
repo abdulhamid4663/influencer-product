@@ -37,13 +37,13 @@ img {
         width: 33.33%;
 
         &:not(:first-of-type) {
-            padding-left: 1rem;
+            padding-left: 0.9375rem;
         }
         &:nth-of-type(2) {
-            padding: 0;
+            padding: 0 0.9375rem;
         }
         &:not(:last-of-type) {
-            padding-right: 1rem;
+            padding-right: 0.9375rem;
         }
     }
 }
