@@ -41,9 +41,6 @@
         @include breakpoint-up(large) {
             width: 28%;
         }
-        &-image {
-
-        }
         &-text {
             padding: 0 0 1.6875rem;
 
@@ -72,9 +69,6 @@
             }
             .card-rate {
                 .card-rate-info {
-                    .rate-item {
-
-                    }
                     .star {
                         font-size: 0.625rem;
                         color: $star-color;
